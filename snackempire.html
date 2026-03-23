@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Empire | From Lemonade Stand to Cosmic Mayhem</title>
+    <style>
+        :root {
+            --primary: #ffcc00; /* Snack Yellow */
+            --accent: #ff4757;  /* Danger Red */
+            --bg: #120d08;
+            --card-bg: #1e1710;
+            --text: #fdf6e3;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('https://via.placeholder.com/1920x1080');
+            background-size: cover;
+            text-align: center;
+            border-bottom: 5px solid var(--primary);
+        }
+
+        h1 { font-size: 4rem; margin: 0; text-transform: uppercase; color: var(--primary); text-shadow: 2px 2px #000; }
+        
+        .cta-button {
+            background: var(--accent);
+            color: white;
+            padding: 20px 50px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            border: 3px solid #fff;
+            transition: 0.2s;
+        }
+
+        .cta-button:hover { transform: translateY(-5px); background: #ff6b81; }
+
+        .container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: var(--card-bg); padding: 20px; border-radius: 10px; border: 2px solid #3d2b1f; }
+        
+        footer { text-align: center; padding: 40px; color: #666; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SNACK EMPIRE</h1>
+        <p>You’re just a kid with a snack stand. What could possibly go wrong?</p>
+        <a href="YOUR_DOWNLOAD_LINK_HERE" class="cta-button">START THE CHAOS</a>
+    </header>
+
+    <div class="container">
+        <section style="text-align: center; margin-bottom: 50px;">
+            <h2>From Simple Salted Pretzels to... Whatever That Is.</h2>
+            <p>Start by selling snacks to the neighborhood. End by managing a trans-dimensional supply chain of forbidden treats. It’s stupid, it’s loud, and it’s arguably a bad business model.</p>
+        </section>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Progression Gone Wrong</h3>
+                <p>Unlock <b>Upgrades</b> and <b>Relics</b> that defy logic. Who needs profit margins when you have dark magic?</p>
+            </div>
+            <div class="card">
+                <h3>Prestige & Maps</h3>
+                <p>Traverse dozens of <b>weird maps</b>. Get bored of the sidewalk? Move your operation to the Void. Or the Moon. Or inside someone's stomach.</p>
+            </div>
+            <div class="card">
+                <h3>Skills & Quests</h3>
+                <p>Complete <b>stupid quests</b> and level up your <b>Skills</b>. Compete on the <b>Leaderboard</b> to see who has the most questionable snack-selling history.</p>
+            </div>
+            <div class="card">
+                <h3>Gem Shop & Trophies</h3>
+                <p>Collect <b>Trophies</b> you don't deserve and blow your hard-earned cash in the <b>Gem Shop</b> on items that definitely aren't cursed.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Snack Empire &copy; 2026 | Warning: May contain traces of existential dread.</p>
+    </footer>
+
+</body>
+</html>
