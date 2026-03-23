@@ -3,20 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snack Empire!!</title>
+    <title>Game Title | Official Site</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; text-align: center; padding: 50px; background: #f4f4f4; }
-        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .btn { display: inline-block; background: #007bff; color: white; padding: 15px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
-        .btn:hover { background: #0056b3; }
+        :root {
+            --primary: #8a2be2; /* Electric Purple */
+            --accent: #00ffcc;  /* Neon Teal */
+            --bg: #0a0a0c;
+            --card-bg: #16161a;
+            --text: #eeeeee;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('background-pattern.png'); /* Add a cool bg image here */
+            background-size: cover;
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        h1 { font-size: 4rem; margin: 0; text-transform: uppercase; letter-spacing: 5px; color: var(--accent); }
+        
+        /* Buttons */
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            transition: 0.3s;
+            box-shadow: 0 0 15px var(--primary);
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            background: var(--accent);
+            color: var(--bg);
+            box-shadow: 0 0 25px var(--accent);
+        }
+
+        /* Main Content */
+        .container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .card:hover { border-color: var(--primary); }
+
+        .screenshot {
+            width: 100%;
+            height: 200px;
+            background: #333; /* Placeholder */
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        footer { text-align: center; padding: 40px; font-size: 0.9rem; opacity: 0.6; }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+        }
     </style>
 </head>
 <body>
+
+    <header>
+        <h1>GAME TITLE</h1>
+        <p>A thrilling [Genre] experience made with [Engine].</p>
+        <a href="YOUR_LINK_HERE" class="cta-button">DOWNLOAD NOW</a>
+    </header>
+
     <div class="container">
-        <h1>Snack Empire!!!</h1>
-        <p>Snack Empire is literally just a clicker game about food.. that's it.</p>
         
-        <a href="" class="btn">Download Now</a>
+        <section>
+            <h2 style="color: var(--accent);">About the Game</h2>
+            <p>Write two or three sentences here that hook the player. Mention your unique mechanic or the story setting. Make it punchy!</p>
+        </section>
+
+        <div class="grid">
+            <div class="card">
+                <img src="ss1.jpg" alt="Gameplay 1" class="screenshot">
+                <h3>Vibrant Worlds</h3>
+                <p>Explore handcrafted environments designed for immersion.</p>
+            </div>
+
+            <div class="card">
+                <img src="ss2.jpg" alt="Gameplay 2" class="screenshot">
+                <h3>Intense Combat</h3>
+                <p>Master the mechanics and defeat challenging enemies.</p>
+            </div>
+
+            <div class="card">
+                <div class="screenshot" style="display: flex; align-items: center; justify-content: center;">[Video/GIF Placeholder]</div>
+                <h3>Dynamic Action</h3>
+                <p>Experience smooth 60FPS gameplay and stunning effects.</p>
+            </div>
+        </div>
+
+        <section style="margin-top: 80px; text-align: center;">
+            <h2>System Requirements</h2>
+            <p>Windows 10/11 | 4GB RAM | 200MB Disk Space</p>
+        </section>
+
     </div>
+
+    <footer>
+        &copy; 2026 Your Name/Studio. Built with passion.
+    </footer>
+
 </body>
 </html>
